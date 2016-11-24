@@ -1,6 +1,7 @@
 package com.zenika.formation;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -30,11 +31,17 @@ public class DemoTest {
 	
 	@Test
 	public void test5() {
-		Assert.assertTrue(true);
+		Assert.assertTrue(false);
 	}
 	
 	@Test
 	public void test6() {
+		Assert.assertTrue(true);
+	}
+
+	@Test
+	@Ignore
+	public void test7() {
 		Assert.assertTrue(true);
 	}
 }
