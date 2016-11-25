@@ -100,4 +100,58 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
+	
+	<repositories>
+
+		<!-- Extension to default : Spring RELEASE distribution for dependencies -->
+		<repository>
+			<id>spring-releases</id>
+			<name>Spring Releases</name>
+			<url>https://repo.spring.io/libs-release</url>
+		</repository>
+
+		<!-- Overhide default : maven standard repository clone -->
+		<repository>
+			<id>org.jboss.repository.releases</id>
+			<name>JBoss Maven Release Repository</name>
+			<url>https://repository.jboss.org/nexus/content/repositories/releases</url>
+		</repository>
+
+		<repository>
+			<id>demo-releases</id>
+			<name>Demo managed Releases and private dependencies</name>
+			<url>http://127.0.0.1:8081/repository/maven-public</url>
+		</repository>
+
+	</repositories>
+
+
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- ++ EXTENSION OF PLUGINS REPOSITORY SERVERS ++ -->
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
+
+	<pluginRepositories>
+
+		<!-- Extension to default : Spring RELEASE distribution for plugins -->
+		<pluginRepository>
+			<id>spring-releases</id>
+			<name>Spring Releases</name>
+			<url>https://repo.spring.io/libs-release</url>
+		</pluginRepository>
+
+	</pluginRepositories>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>snapshots-deploy</id>
+			<name>libs-snapshot-deploy</name>
+			<url>http://127.0.0.1:8081/repository/maven-snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>central-deploy</id>
+			<name>libs-releases-deploy</name>
+			<url>http://127.0.0.1:8081/repository/maven-releases</url>
+		</repository>
+	</distributionManagement>
+
 </project>
