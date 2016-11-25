@@ -30,7 +30,6 @@ public class DemoTest {
 	}
 	
 	@Test
-	@Ignore
 	public void test5() {
 		Assert.assertTrue(false);
 	}
