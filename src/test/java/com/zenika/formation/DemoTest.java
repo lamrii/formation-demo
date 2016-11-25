@@ -30,6 +30,7 @@ public class DemoTest {
 	}
 	
 	@Test
+	@Ignore
 	public void test5() {
 		Assert.assertTrue(false);
 	}
@@ -42,6 +43,11 @@ public class DemoTest {
 	@Test
 	@Ignore
 	public void test7() {
+		Assert.assertTrue(true);
+	}
+	
+	@Test
+	public void test8() {
 		Assert.assertTrue(true);
 	}
 }
