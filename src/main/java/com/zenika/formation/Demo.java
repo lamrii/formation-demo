@@ -36,6 +36,8 @@ public class Demo {
 
 		String port = SpringApplication.run(Demo.class, args).getEnvironment().getProperty("server.port");
 
+		System.out.println("Crappy  = " + new Crappy());
+
 		LOGGER.info("##################### demo started on port {} ########################", port);
 	}
 
