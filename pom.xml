@@ -120,7 +120,7 @@
 		<repository>
 			<id>demo-releases</id>
 			<name>Demo managed Releases and private dependencies</name>
-			<url>http://192.168.1.41:8081/repository/maven-public</url>
+			<url>http://192.168.3.23:8081/repository/maven-public</url>
 		</repository>
 
 	</repositories>
@@ -145,12 +145,12 @@
 		<snapshotRepository>
 			<id>snapshots-deploy</id>
 			<name>libs-snapshot-deploy</name>
-			<url>http://192.168.1.41:8081/repository/maven-snapshots</url>
+			<url>http://192.168.3.23:8081/repository/maven-snapshots</url>
 		</snapshotRepository>
 		<repository>
 			<id>central-deploy</id>
 			<name>libs-releases-deploy</name>
-			<url>http://192.168.1.41:8081/repository/maven-releases</url>
+			<url>http://192.168.3.23:8081/repository/maven-releases</url>
 		</repository>
 	</distributionManagement>
 
