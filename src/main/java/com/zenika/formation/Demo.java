@@ -26,6 +26,8 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 public class Demo {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(Demo.class);
+	
+	private static final String password = "Admin";
 
 	/**
 	 * @param args
